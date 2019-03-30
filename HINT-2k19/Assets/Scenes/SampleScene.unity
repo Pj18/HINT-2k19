@@ -813,6 +813,7 @@ MonoBehaviour:
   previous: {fileID: 2036486705}
   customize: {fileID: 626253824}
   info: {fileID: 1292668009}
+  review: {fileID: 1118190475}
   numberOfDishes: 4
   dishname: {fileID: 1215378189}
   dishinfo: {fileID: 320058220}
@@ -1270,6 +1271,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1118190473}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1118190475 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400004, guid: 05a81c3d5091440058129444d28322f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1118190473}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1124605423
 GameObject:
   m_ObjectHideFlags: 0

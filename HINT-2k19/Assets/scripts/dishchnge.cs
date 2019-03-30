@@ -12,6 +12,7 @@ public class dishchnge : MonoBehaviour
     public Button previous;
     public Button customize;
     public Button info;
+    public Button review;
     private bool infoshow = true;
     private int dishNumber = 0;
     public int numberOfDishes = 4;
@@ -48,6 +49,7 @@ public class dishchnge : MonoBehaviour
         previous.onClick.AddListener(prevDish);
         customize.onClick.AddListener(chngescene);
         info.onClick.AddListener(changeinfo);
+        review.onClick.AddListener(tellreview);
     }
 
     void nextDish()
@@ -122,5 +124,12 @@ public class dishchnge : MonoBehaviour
             dishname.text = nameofdish[dishNumber];
             dishinfo.text = aboutdish[dishNumber];
         }
+    }
+
+
+    void tellreview()
+    {
+        PlayerPrefs.SetInt("modelno", dishNumber);
+        SceneManager.LoadScene("reviews");
     }
 }
