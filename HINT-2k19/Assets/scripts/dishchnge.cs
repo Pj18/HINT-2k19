@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class dishchnge : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class dishchnge : MonoBehaviour
     public GameObject[] myDishes;
     public Button next;
     public Button previous;
+    public Button customize;
     private int dishNumber = 0;
     public int numberOfDishes=3;
 
@@ -30,6 +32,7 @@ public class dishchnge : MonoBehaviour
         }
         next.onClick.AddListener(nextDish);
         previous.onClick.AddListener(prevDish);
+        customize.onClick.AddListener(chngescene);
     }
 
     void nextDish()
@@ -68,5 +71,11 @@ public class dishchnge : MonoBehaviour
                 myDishes[i].SetActive(false);
             }
         }
+    }
+
+
+    void chngescene()
+    {
+        SceneManager.LoadScene("customization");
     }
 }
